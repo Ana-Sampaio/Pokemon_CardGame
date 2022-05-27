@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<html>
+
+	<head>
+	<title> Pokemon Card-Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head> 
+
+	<body>
+
+		<div class="container">
+	        <!--<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+	            alt="">-->
+			<p class="subtitulo">To my dear friends Sanela and Daniel,</p>
+	        <h1 class="page-title">Ana Sampaio proudly presents: "A Pokemon Card Game"</h1>
+
+	        <button onclick="sortearCarta()" id="btnSortear">Pick a card</button>
+
+	        <form id="form" checked>
+	            <h2>Choose an Attribute</h2>
+	            <p class="rules">The player with the highest value of the chosen attribute wins</p>
+	            <div class="opcoes" id="opcoes"></div>
+	            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div>
+                    <div id="carta-maquina" class="carta">
+                    	<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                        style=" width: inherit; height: inherit; position: absolute;">
+                    </div>
+                </div>
+            	</div>
+	            <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Place Your Bet</button>
+	            <div id="resultado"></div>
+				<p class="subtitulo">refresh the page to restart the game</p>
+	        </form>
+    	</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
